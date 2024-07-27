@@ -4,7 +4,7 @@ describe("empty spec", () => {
   });
 
   it("opens the index page", () => {
-    cy.get("h1").contains("Great coffee with a conscience");
+    cy.get("h1").contains("Zenan Liu");
   });
 
   it("navigates to the work page", () => {
@@ -16,7 +16,7 @@ describe("empty spec", () => {
   it("navigates to the about page", () => {
     cy.get('a[href="/about"]').eq(0).click();
     cy.url().should("include", "/about");
-    cy.get("h1").contains(/Values/i);
+    cy.get("h1").contains(/About/i);
   });
 
   it("navigates to the blog page", () => {
