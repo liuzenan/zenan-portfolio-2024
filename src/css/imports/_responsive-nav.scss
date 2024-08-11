@@ -15,10 +15,18 @@
     right: 0;
     overflow-y: auto;
     position: absolute;
-    top: calc(var(--spacing-medium) + 30px);
+    top: 63px;
     transition: height .3s ease-in-out;
     min-width: 100%;
     z-index: 1;
+}
+
+.nav-menu-item {
+    border-bottom: 1px solid var(--grey-2);
+}
+
+.nav-menu-item:first-child{
+    border-top: 1px solid var(--grey-2);
 }
 
 .mobile-menu-inner {
@@ -41,7 +49,7 @@
     transform: translatex(-48px) translatey(28px) rotate(-45deg);
 }
 
-@media (--breakpoint-large) {
+@media (--breakpoint-medium) {
     .mobile-menu-container {
         display: none;
     }

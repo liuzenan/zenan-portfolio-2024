@@ -153,7 +153,8 @@
       --angle: #{calc(360deg / 50) * $i};
     }
   }
-  
+
+    
   @media (--breakpoint-medium) {
     .scene {
       scale: 2;
@@ -163,6 +164,7 @@
       perspective-origin: 50% calc(50% - 720px);
       min-height: 700px;
     }
+
   }
 
   @media (--breakpoint-large) {
@@ -175,4 +177,5 @@
       min-height: 960px;
       margin-bottom: 300px;
     }
+
   }
