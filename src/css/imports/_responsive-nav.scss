@@ -60,4 +60,12 @@
         min-width: unset;
         height: auto;
     }
+
+    .nav-menu-item {
+        border-bottom: 0;
+    }
+    
+    .nav-menu-item:first-child{
+        border-top: 0;
+    }
 }
