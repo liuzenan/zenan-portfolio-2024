@@ -1,5 +1,16 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title) }}
+{{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "title" "Latest work") }}
 
-{{ end }}
+<div class="mw7 center">
+  <ul id="project-list" class="flex-ns flex-wrap mhn1-ns pa3">
+      {{ range (.Paginator 4).Pages }}
+          <li class="w-50-ns ph1-ns flex">
+            {{ .Render "li_project"}}
+          </li>
+      {{ end }}
+  </ul>
+  {{ partial "pagination" . }}
+</div>
+
+{{end}}
