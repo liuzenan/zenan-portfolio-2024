@@ -25,7 +25,7 @@ collections: # A list of collections the CMS should be able to edit
         name: "home"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: "Projects", name: products, widget: list, fields: [
+          - {label: "Projects", name: projects, widget: list, fields: [
               {label: "Image", name: "image", widget: "image"},
               {label: "Title", name: "title", widget: "text"},
               {label: "Subtitle", name: "subtitle", widget: "text"}]}
