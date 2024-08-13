@@ -116,20 +116,7 @@
     </div>
     <section class="w-100">
       <h2 class="lh-title f4 b">Projects (WIP)</h2>
-      <section class="cf w-100 mt3 mb3">
-        {{ range $project := .Params.projects }}
-        <article class="fl w-100 w-50-m w-25-ns pr3-ns">
-          <div class="aspect-ratio aspect-ratio--1x1">
-            <img style="background-image:url({{ $project.image }});" 
-            class="db bg-center cover aspect-ratio--object" />
-          </div>
-          <a href="#0" class="pt2 pb4 link db">
-            <h3 class="f5 f4-ns black">{{ $project.title }}</h3>
-            <h3 class="f6 f5 fw4 grey-4">{{ $project.subtitle }}</h3>
-          </a>
-        </article>
-        {{ end }}
-      </section>
+      {{ partial "project" . }}
     </section>
 </div>
 

@@ -1,0 +1,14 @@
+<section class="cf w-100 mt3 mb4">
+    {{ range ( where .Site.RegularPages "Type" "work" ) }}
+    <a href="{{ .RelPermalink }}" class="db raise no-underline">
+        <div class="fl w-100 w-50-m w-25-ns pr3-ns">
+            <div class="aspect-ratio aspect-ratio--1x1">
+              <img style="background-image:url({{ .Params.image }});" 
+              class="db bg-center cover aspect-ratio--object" />
+            </div>
+            <h3 class="f5 f4-ns black pt2">{{ .Params.title }}</h3>
+            <h3 class="f6 f5 fw4 grey-4">{{ .Params.subtitle }}</h3>
+          </div>
+    </a>
+    {{ end }}
+  </section>
