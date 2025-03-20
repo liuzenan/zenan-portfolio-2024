@@ -1,10 +1,16 @@
 {{ define "main" }}
 
-<div class="mw8-l center ph3 ph4-m ph5-l">
-  <section class="w-100 mw6 mt4 mt5-m mb3-l">
+<div class="flex flex-column min-vh-100 mw8-l center ph3 ph4-m ph5-l">
+  <section class="flex-auto flex flex-column justify-center w-100 mw6 mt1 mt2-m">
     <h1 class="lh-title f3 b mt0">
       {{ .Params.header }}
     </h1>
+    <div class="flex flex-row mt3 mb3">
+      <div class="mr3"><a href="https://www.linkedin.com/in/liuzenan/" target="_blank">LinkedIn</a><sup>↗</sup></div>
+      <div><a href="https://www.figma.com/deck/g82d8bND9yyOrSr6hT4XKG" target="_blank">Portfolio</a><sup>↗</sup></div> 
+    </div>
+    
+
   </section>
     <div class="stage">
         <div class="scene">
@@ -114,10 +120,7 @@
               </div>
         </div>
     </div>
-    <section class="w-100">
-      <h2 class="lh-title f4 b">Projects (WIP)</h2>
-      {{ partial "project" . }}
-    </section>
+
 </div>
 
 {{ end }}
